@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <first></first>-->
+<!--    <second></second>-->
+<!--</div>-->
+<!--<hr>-->
+<!--<div id="main">-->
+<!--    <first></first>-->
+<!--    <second></second>-->
+<!--</div>-->
+<!--<script>-->
+<!--    let first={-->
+<!--        template:`<div>这是我的first组件</div>`-->
+<!--    }-->
+<!--    let second={-->
+<!--        template:`<div>这是我的second组件</div>`-->
+<!--    }-->
+<!--    Vue.component("first",first)-->
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{},-->
+<!--        components:{-->
+<!--            "second":second-->
+<!--        }-->
+<!--    })-->
+<!--    new Vue({-->
+<!--        el:'#main'-->
+<!--    })-->
+<!--</script>-->
+<div id="app">
+    <first></first>
+    <second></second>
+</div>
+<div id="main">
+    <first></first>
+    <second></second>
+</div>
+<script>
+    let first={
+        template:`
+           <div>这是我的first组件</div>
+
+        `
+    }
+    let second={
+        template:`<div>这是我的第二个组件</div>`
+    }
+    Vue.component('first',first)
+    new Vue({
+        el:'#app',
+        data:{},
+        components:{
+            'second':second
+        }
+    })
+    new Vue({
+        el:'#main'
+    })
+</script>
+</body>
+</html>

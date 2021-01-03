@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--    <com></com>-->
+<!--</div>-->
+<!--<script>-->
+<!--    // 组件的定义-->
+<!--    let com={-->
+<!--        template:`<div>这是我的第一个组件</div>`-->
+<!--    }-->
+<!--    Vue.component("com",com)-->
+
+<!--    new Vue({-->
+<!--        el:"#app",-->
+<!--        data:{}-->
+<!--    })-->
+<!--</script>-->
+<div id="app">
+    <com></com>
+    <com></com>
+    <com></com>
+    <com></com>
+</div>
+<script>
+    let com={
+        template:`<div>这是我的第一个组件</div>`
+    }
+    Vue.component('com',com)
+    new Vue({
+        el:"#app",
+        data:{}
+
+    })
+</script>
+</body>
+</html>
